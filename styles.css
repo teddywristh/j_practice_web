@@ -1,0 +1,13 @@
+.name {
+    font-size: 24px;
+    color: #031f84;
+    text-align: center;
+}
+
+.dashboard .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: 1 1 200px;
+}
