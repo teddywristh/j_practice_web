@@ -11,3 +11,17 @@
     gap: 20px;
     flex-wrap: 1 1 200px;
 }
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color:#031f84;
+    text-align: center;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
