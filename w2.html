@@ -1,92 +1,76 @@
-<!doctype html> 
-<html lang="vi"> 
-  <head> 
-    <meta charset="UTF-8" /> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
-    <title>余炅的世界</title> 
-    <link rel="stylesheet" href="styles.css" />
-  </head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lab 2</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    button {
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    /* Dynamic feedback styling */
+    .error-message {
+      color: #d9534f;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    .success-message {
+      color: #5cb85c;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
 
-  <body> 
+  <h2>House Price Input Form</h2>
 
-    <header> 
-      <img 
-        src="img/logo-fda.png"  
-        alt="Logo Khoa Khoa học dữ liệu và Trí tuệ nhân tạo"  
-        style="display: block; margin: 0 auto;"
-        width="500"  
-      /> 
+  <!-- 1. Form Element (Fixes the null listener error) -->
+  <form id="houseForm">
+    <div class="form-group">
+      <label for="location">Location:</label>
+      <input type="text" id="location" name="location">
+    </div>
 
-      <h2 class="name" id="my-name">余炅 - Eric Wristh</h2> 
-    </header> 
+    <div class="form-group">
+      <label for="price">Price ($):</label>
+      <input type="number" id="price" name="price">
+    </div>
 
-    <main>
-      <p> This is paragraph content </p>
-      <div>This is division content </div>
+    <div class="form-group">
+      <label for="bedrooms">Bedrooms:</label>
+      <input type="number" id="bedrooms" name="bedrooms">
+    </div>
 
-      <hr> This is horizontal line content <hr>
-      <br> This is line break content <br>
+    <button type="submit">Submit</button>
 
-      <video width="560" height="315" controls>
-        <source src="https://www.youtube.com/watch?v=CzxPWc8vGCk&list=PL8FpfkamF1CSCEWSk2Ts6-mgyYKFq2Ice&index=12" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      
-      <br> This is line break content <br>
+    <div id="feedbackContainer"></div>
 
-      <audio controls>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio> 
-
-      <br> This is line break content <br>
-      
-      <a href="https://elearning.fda.edu.vn/login/index.php?loginredirect=1" target="_blank">External Link</a>
-      <a href="#contact">In-page Link</a>
-
-      <br> This is line break content <br>
-
-      <p id="about-me">About Me</p>
-      <p id="contact">Contact</p>
-
-      <br> This is line break content <br>
-
-      <form> 
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Submit</button>
-      </form>
-
-      <h2>This is a <span style="color: blue;">blue</span> word.</h2>
-      <h3>This is <em>emphasized</em> and <strong>important</strong> text.</h3>
-
-      <h4>The 10<sup>th</sup> floor is at the top.</h4>
-      <h5>The chemical formula for water is H<sub>2</sub>O.</h5>
-
-      <h2>HTML stands for <abbr title="Hypertext Markup Language">HTML</abbr>.</h2>
-
-      <h1>Search for "<mark>important</mark>" information here.</h1>
-
-      <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-      </ul>
-
-      <p> The book <cite>War and Peace </cite> is a classic novel. </p>
-    </main>  
-
-
-    <footer> 
-      <p>&copy; 2026 Khoa Khoa học dữ liệu và Trí tuệ nhân tạo</p> 
-      
-    </footer> 
-
-  </body>  
-</html>
+    <script src="w3.js"></script>
+  </form>
