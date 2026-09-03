@@ -1,0 +1,91 @@
+.name {
+    font-size: 24px;
+    color: #031f84;
+    text-align: center;
+}
+
+.dashboard .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: 1 1 200px;
+}
+
+body {
+    background-color: white;
+}
+
+h1 {
+    color:#4e000c;
+    text-align: center;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+
+.table.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: 1 1 200px;
+}
+
+table {
+    text-align: left;
+    border: 1px solid #410000;
+    border-collapse: collapse;
+    padding: 30px;
+    margin: 0 auto;
+    border-radius: 20px;
+}
+
+th {
+    background-color: rgba(77, 2, 13, 0.895);
+    color: white;
+    text-align: center;
+    border: 1px solid #420102;
+    border-collapse: collapse;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.895);
+    border: 1px solid #2d0002;
+    padding: 10px;
+}
+
+td:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #4e000c;
+    cursor: pointer;
+}
+
+button {
+    background-color: rgb(74, 0, 0);
+    color: rgb(245, 239, 239);
+    border: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: bold; 
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* .button.wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: 1 1 200px;
+} */
+
+button:hover {
+    background-color: rgb(232, 163, 163);
+    color: rgb(45, 2, 2);
+    cursor: pointer;
+}
